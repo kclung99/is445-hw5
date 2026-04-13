@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-6afac9c56cebd3e4cb60df6b54933671"}, "mark": {"type": "line", "point": true}, "encoding": {"tooltip": [{"field": "year", "type": "quantitative"}, {"field": "n_sightings", "type": "quantitative"}], "x": {"field": "year", "title": "Year", "type": "quantitative"}, "y": {"field": "n_sightings", "title": "Number of UFO sightings", "type": "quantitative"}}, "height": 350, "title": "UFO sightings over time", "width": 700, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-6afac9c56cebd3e4cb60df6b54933671": [{"year": 1906, "n_sightings": 1}, {"year": 1910, "n_sightings": 2}, {"year": 1916, "n_sightings": 1}, {"year": 1920, "n_sightings": 1}, {"year": 1925, "n_sightings": 1}, {"year": 1929, "n_sightings": 1}, {"year": 1930, "n_sightings": 1}, {"year": 1931, "n_sightings": 2}, {"year": 1933, "n_sightings": 1}, {"year": 1934, "n_sightings": 1}, {"year": 1936, "n_sightings": 2}, {"year": 1937, "n_sightings": 2}, {"year": 1939, "n_sightings": 3}, {"year": 1941, "n_sightings": 1}, {"year": 1942, "n_sightings": 2}, {"year": 1943, "n_sightings": 9}, {"year": 1944, "n_sightings": 9}, {"year": 1945, "n_sightings": 9}, {"year": 1946, "n_sightings": 10}, {"year": 1947, "n_sightings": 37}, {"year": 1948, "n_sightings": 8}, {"year": 1949, "n_sightings": 16}, {"year": 1950, "n_sightings": 28}, {"year": 1951, "n_sightings": 20}, {"year": 1952, "n_sightings": 49}, {"year": 1953, "n_sightings": 33}, {"year": 1954, "n_sightings": 53}, {"year": 1955, "n_sightings": 32}, {"year": 1956, "n_sightings": 45}, {"year": 1957, "n_sightings": 72}, {"year": 1958, "n_sightings": 47}, {"year": 1959, "n_sightings": 50}, {"year": 1960, "n_sightings": 66}, {"year": 1961, "n_sightings": 48}, {"year": 1962, "n_sightings": 73}, {"year": 1963, "n_sightings": 86}, {"year": 1964, "n_sightings": 88}, {"year": 1965, "n_sightings": 188}, {"year": 1966, "n_sightings": 193}, {"year": 1967, "n_sightings": 188}, {"year": 1968, "n_sightings": 220}, {"year": 1969, "n_sightings": 155}, {"year": 1970, "n_sightings": 147}, {"year": 1971, "n_sightings": 130}, {"year": 1972, "n_sightings": 158}, {"year": 1973, "n_sightings": 226}, {"year": 1974, "n_sightings": 273}, {"year": 1975, "n_sightings": 319}, {"year": 1976, "n_sightings": 279}, {"year": 1977, "n_sightings": 268}, {"year": 1978, "n_sightings": 335}, {"year": 1979, "n_sightings": 245}, {"year": 1980, "n_sightings": 246}, {"year": 1981, "n_sightings": 164}, {"year": 1982, "n_sightings": 183}, {"year": 1983, "n_sightings": 153}, {"year": 1984, "n_sightings": 186}, {"year": 1985, "n_sightings": 218}, {"year": 1986, "n_sightings": 193}, {"year": 1987, "n_sightings": 223}, {"year": 1988, "n_sightings": 241}, {"year": 1989, "n_sightings": 251}, {"year": 1990, "n_sightings": 259}, {"year": 1991, "n_sightings": 234}, {"year": 1992, "n_sightings": 252}, {"year": 1993, "n_sightings": 309}, {"year": 1994, "n_sightings": 421}, {"year": 1995, "n_sightings": 1078}, {"year": 1996, "n_sightings": 834}, {"year": 1997, "n_sightings": 1255}, {"year": 1998, "n_sightings": 1767}, {"year": 1999, "n_sightings": 2805}, {"year": 2000, "n_sightings": 2772}, {"year": 2001, "n_sightings": 3122}, {"year": 2002, "n_sightings": 3235}, {"year": 2003, "n_sightings": 3962}, {"year": 2004, "n_sightings": 4257}, {"year": 2005, "n_sightings": 4083}, {"year": 2006, "n_sightings": 3721}, {"year": 2007, "n_sightings": 4269}, {"year": 2008, "n_sightings": 4820}, {"year": 2009, "n_sightings": 4541}, {"year": 2010, "n_sightings": 4283}, {"year": 2011, "n_sightings": 5107}, {"year": 2012, "n_sightings": 7357}, {"year": 2013, "n_sightings": 7037}, {"year": 2014, "n_sightings": 2260}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
