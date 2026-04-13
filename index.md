@@ -1,6 +1,4 @@
-# UFO Sightings Analysis
-
-This webpage presents two visualizations built from the same UFO sightings dataset. I used Python with Altair, which generates Vega-Lite specifications, to create both charts. The first visualization focuses on how UFO reports change over time, while the second focuses on how reported UFO shapes vary across countries.
+This webpage presents two visualizations built from the same UFO sightings dataset. The first visualization focuses on how UFO reports change over time, while the second focuses on how reported UFO shapes vary across countries.
 
 ## Visualization 1: UFO Sightings Over Time
 
